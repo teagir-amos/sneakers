@@ -1,0 +1,265 @@
+*{
+    margin: 0px;
+    font-family: consolas;
+    box-sizing: border-box;
+}
+*html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+nav{
+    background-color: smokewhite;
+    width: 100%;
+    z-index: 10;
+    border-bottom:1px solid rgb(240, 233, 233);
+    padding-top: 10px;
+    flex-grow: 1;
+    display: flex;
+    z-index: 10;
+}
+nav .nav-toggle{
+    position: absolute;
+} 
+nav .icon-burger{
+    position: absolute;
+    transform: translateY(-50%);
+    display: none;
+    padding-top: 26px;
+    margin-right: 20px;
+
+    
+}
+nav .icon-burger .line{
+    width: 20px;
+    height: 2px;
+    background-color: hsl(219, 9%, 45%);
+    margin: 5px;
+    display: flex;
+
+}
+nav .logo{
+    float: left;
+    height: 100%;
+    padding-left: 5px;  
+    margin-right: 10px;
+} 
+nav .links{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+ nav .links a{
+    color: black;
+}
+
+nav .cart{
+    height: 21px;
+    width: 22px;
+    padding-top: 3px;  
+}
+nav .profile img{
+    height: 30px;
+    width: 30px;
+    padding-right: 5px;
+}
+nav .plus{
+    display: flex;
+    gap: 3em;
+    margin-left: auto;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.container .images{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right:5rem ;
+    padding-top:3rem;
+    padding-left:3rem ;
+}
+.container .main{
+    display: flex;
+    padding: 1rem;
+    
+}
+.container .main img{
+    height:330px ;
+    width: 330px;
+    border-radius: 20px;
+}
+.container .slide{
+    display: flex;
+    gap: 1em;
+    padding: 1rem;
+
+}
+.container .slide img{
+    display: flex;
+    height:65px ;
+    width: 74px;
+    border-radius: 10px;
+    
+}
+.container .slide img:nth-child(1){
+    border:2px solid hsl(26, 100%, 55%) ;
+    filter:opacity(30%)
+}
+.details{
+    display: flex;
+    padding-top: 8rem;
+    flex-direction: column;
+
+}
+.details .heading1{
+    font-size: smaller;
+    color: hsl(26, 100%, 55%) ;
+    font-weight: bolder;
+}
+.details .heading2{
+    font-size: xx-large;
+}
+.details .description p{
+    color: hsl(219, 9%, 45%);
+    font-size: medium;
+    font-weight: bold;
+}
+.details .price{
+    display: flex;
+    margin-right: 1rem;
+    font-size: x-large;
+    font-weight: bolder;
+    float: left;
+
+}
+.details .percentage{
+    display: flex;
+    background:hsl(25, 100%, 94%) ;
+    width: 35px;
+    height: 20px;
+    padding-left: 7px;
+    padding-top: 3px;
+    border-radius: 10px;
+    color:hsl(26, 100%, 55%)  ;
+    font-weight: bold;
+    
+}
+.details .strike{
+    font-size: larger;
+    font-weight: bolder;
+    color: hsl(219, 9%, 45%);
+    
+
+    
+}
+.plus2{
+    display: flex;
+    gap: 1rem;
+    
+    
+}
+.number{
+   display: flex;
+   width: 90px;
+   background: hsl(223, 64%, 98%);
+   border-radius: 10px;
+   justify-content: space-around;
+   padding-top: 5px;
+}
+.subtract{
+    color: hsl(26, 100%, 55%);
+    font-weight: bolder;
+    font-size: x-large;
+}
+.digit{
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.add{
+    color: hsl(26, 100%, 55%);
+    font-weight: bolder;
+    font-size: x-large;
+    padding-bottom: 5px;
+
+}
+.shopping{
+    display: flex;
+    gap: 6px;
+    height:  33px;
+    width: 140px;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: white;
+    background:hsl(26, 100%, 55%) ; 
+    border: none;
+    border-radius: 10px;
+}
+.shopping img{
+    height: 15px;
+    width: 15px;
+}
+@media screen and (max-width: 600px) {
+    nav .icon-burger{
+        display: block;
+
+    }
+    nav .icon-burger .line{
+        margin-left: 5rem;
+        
+        
+    }
+    nav .logo img{
+        padding-left: 7rem;
+    } 
+    nav .links a{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;  
+    } 
+    .container .images{
+        display: flex;
+        flex-direction: column;
+        padding: 11px;
+        width: 400px;
+    }
+    .container .slide{
+        display: none;
+    }
+    .container .main img{
+        display: flex;
+        border-radius: 0px;
+        height:330px ;
+        width: 400px;
+    } 
+    .details .description .p br{
+        display: none;
+    }
+
+    .details{
+        padding-left: 3rem;
+        padding-top:1rem
+    }
+    .plus2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2rem;
+    }
+    .number{
+        width: 330px;
+    }
+    .shopping{
+        width: 330px;
+        padding-left: 130px;
+    
+    }
+}
